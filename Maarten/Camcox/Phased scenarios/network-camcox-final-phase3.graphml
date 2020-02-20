@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    
+  	 <!--CamCox Phase3-->
+    <!--CamCox based on ITRC report (so with extensions to Aylesbury and Milton Keynes)-->
+
+	<!--The ITRC report talks about a new station in Sandy (evem though there is a station already) and Cambridge South but we ignored those and used the existing stations-->
+	<node id="9100SNDY" code="" lines="CamCox" lon="-0.281190" lat="52.124748" name="Sandy"/>
+	<node id="9100CAMBDGE" code="" lines="CamCox" lon="0.137459" lat="52.194080" name="Cambridge"/>
+
+	<!--New rail stations, based on Maarten's idea for a best position.-->
+
+	<node id="CAMCOX4BEDFORDSOUTH" code="" lines="CamCox" lon="-0.477925" lat="52.114605" name="Bedford South"/>
+	<node id="CAMCOX4BASSINGBOURN" code="" lines="CamCox" lon="-0.048097" lat="52.104709" name="Bassingbourn"/>
+
+
+	<!--Direct CAMCOX-->
+	<!--Times are in seconds and based on Roberto's documentation of current times or-->
+	<!--Based on extrapolation done in the network-camcox-distance-matrix.xlsx file-->
+
+	<!--West-East-->
+	<edge id="e7" source="CAMCOX4BEDFORDSOUTH" target="9100SNDY">
+		<data key="Weight">840</data> 	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e8" source="9100SNDY" target="CAMCOX4BASSINGBOURN">
+		<data key="Weight">1020</data>   <!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e9" source="CAMCOX4BASSINGBOURN" target="9100CAMBDGE">
+		<data key="Weight">1020</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+
+
+
+	<!--East-West-->
+	<edge id="e17" source="9100SNDY" target="CAMCOX4BEDFORDSOUTH">
+		<data key="Weight">840</data> 	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e18" source="CAMCOX4BASSINGBOURN" target="9100SNDY">
+		<data key="Weight">1020</data>   <!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e19" source="9100CAMBDGE" target="CAMCOX4BASSINGBOURN">
+		<data key="Weight">1020</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+	
+  </graph>
+</graphml>

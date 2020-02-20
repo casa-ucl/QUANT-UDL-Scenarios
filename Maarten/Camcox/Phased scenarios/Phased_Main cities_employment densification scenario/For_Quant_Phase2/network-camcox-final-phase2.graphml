@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    
+	<!--CamCox Phase2-->
+
+    <!--Existing rail stations-->
+	<node id="9100BCSTRTN" code="" lines="CamCox" lon="-1.148759" lat="51.893028" name="Bicester Village"/>
+	<node id="9100AYLSPWY" code="" lines="CamCox" lon="-0.860180" lat="51.831169" name="Aylesbury Vale Parkway"/>
+	<node id="9100AYLSBRY" code="" lines="CamCox" lon="-0.815090" lat="51.813899" name="Aylesbury"/>
+	<node id="9100BLTCHLY" code="" lines="CamCox" lon="-0.736320" lat="51.995338" name="Bletchley"/>
+	<node id="9100MKNSCEN" code="" lines="CamCox" lon="-0.774140" lat="52.034301" name="Milton Keynes Central"/>
+	<node id="9100WOBURNS" code="" lines="CamCox" lon="-0.654079" lat="52.018161" name="Woburn Sands"/>
+	<node id="9100RIDGMNT" code="" lines="CamCox" lon="-0.594550" lat="52.026409" name="Ridgmont"/>
+
+	<!--New rail stations, based on Maarten's idea for a best position.-->
+	<node id="CAMCOX4WINSLOW" code="" lines="CamCox" lon="-0.887630" lat="51.947939" name="Winslow"/>
+	<node id="CAMCOX4BEDFORDSOUTH" code="" lines="CamCox" lon="-0.477925" lat="52.114605" name="Bedford South"/>
+
+
+	<!--Direct CAMCOX-->
+	<!--Times are in seconds and based on Roberto's documentation of current times or-->
+	<!--Based on extrapolation done in the network-camcox-distance-matrix.xlsx file-->
+
+	<!--West-East-->
+
+	<edge id="e2" source="9100BCSTRTN" target="CAMCOX4WINSLOW">
+		<data key="Weight">1200</data>	<!--How to calculate time for new trajectories?-->
+	</edge>
+	
+	<edge id="e3" source="CAMCOX4WINSLOW" target="9100BLTCHLY">
+		<data key="Weight">720</data>  	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e4" source="9100BLTCHLY" target="9100WOBURNS">
+		<data key="Weight">660</data>
+	</edge>
+
+	<edge id="e5" source="9100WOBURNS" target="9100RIDGMNT">
+		<data key="Weight">420</data>
+	</edge>
+
+	<edge id="e6" source="9100RIDGMNT" target="CAMCOX4BEDFORDSOUTH">
+		<data key="Weight">780</data> 	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+
+	<!--East-West-->
+
+	<edge id="e12" source="CAMCOX4WINSLOW" target="9100BCSTRTN">
+		<data key="Weight">1200</data>	<!--How to calculate time for new trajectories?-->
+	</edge>
+	
+	<edge id="e13" source="9100BLTCHLY" target="CAMCOX4WINSLOW">
+		<data key="Weight">720</data>  	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<edge id="e14" source="9100WOBURNS" target="9100BLTCHLY">
+		<data key="Weight">660</data>
+	</edge>
+
+	<edge id="e15" source="9100RIDGMNT" target="9100WOBURNS">
+		<data key="Weight">420</data>
+	</edge>
+
+	<edge id="e16" source="CAMCOX4BEDFORDSOUTH" target="9100RIDGMNT">
+		<data key="Weight">780</data> 	<!--How to calculate time for new trajectories?-->
+	</edge>
+
+
+	<!--Branch 1 CamCox: Milton Keynes-Bletchley-->
+	<!--North-South-->
+	<edge id="e20" source="9100MKNSCEN" target="9100BLTCHLY">
+		<data key="Weight">300</data>
+	</edge>
+
+	<!--South-North-->
+	<edge id="e21" source="9100BLTCHLY" target="9100MKNSCEN">
+		<data key="Weight">300</data>
+	</edge>
+
+
+	<!--Branch 2 CamCox: Bicester Village - Aylesbury Vale Parkway -->
+	<!--North-South-->
+	<edge id="e22" source="9100BCSTRTN" target="9100AYLSPWY">
+		<data key="Weight">1500</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<!--South-North-->
+	<edge id="e23" source="9100AYLSPWY" target="9100BCSTRTN">
+		<data key="Weight">1500</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+
+
+	<!--Branch 3 CamCox: Winslow - Aylesbury Vale Parkway -->
+	<!--North-South-->
+	<edge id="e24" source="CAMCOX4WINSLOW" target="9100AYLSPWY">
+		<data key="Weight">1500</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+
+	<!--South-North-->
+	<edge id="e15" source="9100AYLSPWY" target="CAMCOX4WINSLOW">
+		<data key="Weight">1500</data>  <!--How to calculate time for new trajectories?-->
+	</edge>
+	
+  </graph>
+</graphml>
