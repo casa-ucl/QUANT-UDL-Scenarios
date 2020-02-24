@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    
+	<!--Phase one-->
+	<node id="9100EUSTON" code="EUS" lines="P1" lon="-0.13328971879932" lat="51.52859626089940" name="Euston"/>
+	<node id="XOOC" code="" lines="P1" lon="-0.24672" lat="51.524873" name="Old Oak Common"/>
+	<node id="XBHI" code="" lines="P1" lon="-1.70709" lat="52.45243" name="Birmingham Interchange"/>
+	<node id="9100BHAMMRS" code="XBHC" lines="P1" lon="-1.89247" lat="52.47909" name="Birmingham Curzon Street"/>
+	<node id="XWCML" code="" lines="P1" lon="-1.85879" lat="52.73388" name="West Coast Mainline Link"/>
+
+	<!--Phase Two-->
+	<node id="HSL01A" code="" lines="P2" lon="-1.715845" lat="52.546665" name="Water Orton"/>
+	<node id="HSL06B" code="" lines="P2" lon="-1.64216" lat="52.60474" name="Birchmoor"/>
+	<node id="HSL09G" code="" lines="P2" lon="-1.37351" lat="52.80411" name="Tonge"/>
+	<node id="HSL12H" code="" lines="P2" lon="-1.26846" lat="52.90068" name="Long Eaton"/>
+	<node id="HSL13J" code="" lines="P2" lon="-1.28282" lat="52.93624" name="Trowell"/>
+	<node id="HSL14F" code="" lines="P2" lon="-1.33266" lat="53.31220" name="Killamarsh"/>
+	<node id="HSL15K" code="" lines="P2" lon="-1.39822" lat="53.40943" name="Tinsley"/>
+	<node id="HSL16L" code="" lines="P2" lon="-1.42862" lat="53.43372" name="Blackburn"/>
+	<node id="HSL17M" code="" lines="P2" lon="-1.43926" lat="53.63245" name="Cold Hiendley"/>
+	<node id="HSL22Q" code="9100WDLESFD" lines="P2" lon="-1.44289" lat="53.7568" name="Woodlesford"/>
+	<node id="HSL17V" code="9100CHFN" lines="P2" lon="-1.22759" lat="53.82661" name="Church Fenton"/>
+	<node id="HSL31R" code="" lines="P2" lon="-1.54148" lat="53.78564" name="Hunslet"/>
+	<node id="HSL31T" code="9100LEEDS" lines="P2" lon="-1.54802" lat="53.79564" name="Leeds New Lane"/>
+	<node id="HSM03A" code="" lines="P2" lon="-1.80472" lat="52.72002" name="Streethay"/>
+	<node id="HSM06C" code="" lines="P2" lon="-2.22915" lat="52.92870" name="Swynnerton"/>
+	<node id="HSM08D" code="" lines="P2" lon="-2.34750" lat="52.99160" name="Madeley"/>
+	<node id="HSM09E" code="" lines="P2" lon="-2.40740" lat="53.04424" name="Hough"/>
+	<node id="HSM09F" code="9100CREWE" lines="P2" lon="-2.43298" lat="53.08964" name="Crewe"/>
+	<node id="HSM12H" code="" lines="P2" lon="-2.43565" lat="53.32284" name="Winterbottom"/>
+	<node id="HSM21Q" code="" lines="P2" lon="-2.44049" lat="53.39784" name="Warburton"/>
+	<node id="HSM22R" code="" lines="P2" lon="-2.55613" lat="53.47264" name="Lowton"/>
+	<node id="HSM22AA" code="" lines="P2" lon="-2.60432" lat="53.50980" name="Bamfurlong"/>
+	<node id="HSM28BZ" code="" lines="P2" lon="-2.36608" lat="53.35661" name="Rostherne"/>
+	<node id="HSM28BY" code="9100ARDWICK" lines="P2" lon="-2.21432" lat="53.47157" name="Ardwick"/>
+	<node id="HSM26MP" code="9100MNCRPIC" lines="P2" lon="-2.23091" lat="53.47737" name="Manchester Piccadilly"/>
+	
+	<!--HS2Phase1-->
+	<!--NORTH-->
+	<edge id="e0" source="9100EUSTON" target="XOOC">
+		<data key="Weight">219</data>
+	</edge>
+	<edge id="e1" source="XOOC" target="XBHI">
+		<data key="Weight">2506</data>
+	</edge>
+	<edge id="e2" source="XBHI" target="9100BHAMMRS">
+		<data key="Weight">335</data>
+	</edge>
+	<!--SOUTH-->
+	<edge id="e3" source="XOOC" target="9100EUSTON">
+		<data key="Weight">219</data>
+	</edge>
+	<edge id="e4" source="XBHI" target="XOOC">
+		<data key="Weight">2506</data>
+	</edge>
+	<edge id="e5" source="9100BHAMMRS" target="XBHI">
+		<data key="Weight">335</data>
+	</edge>
+	
+	<!--HS2Phase2Leeds-->
+	<!--NORTH-->
+	<edge id="e6" source="9100BHAMMRS" target="HSL01A">
+		<data key="Weight">302</data>
+	</edge>
+	<edge id="e7" source="XBHI" target="HSL01A">
+		<data key="Weight">302</data>
+	</edge>
+	<edge id="e8" source="HSL01A" target="HSL06B">
+		<data key="Weight">84</data>
+	</edge>
+	<edge id="e9" source="HSL06B" target="HSL09G">
+		<data key="Weight">254</data>
+	</edge>
+	<edge id="e10" source="HSL09G" target="HSL12H">
+		<data key="Weight">150</data>
+	</edge>
+	<edge id="e11" source="HSL12H" target="HSL13J">
+		<data key="Weight">54</data>
+	</edge>
+	<edge id="e12" source="HSL13J" target="HSL14F">
+		<data key="Weight">430</data>
+	</edge>
+	<edge id="e13" source="HSL14F" target="HSL15K">
+		<data key="Weight">124</data>
+	</edge>
+	<edge id="e14" source="HSL15K" target="HSL16L">
+		<data key="Weight">47</data>
+	</edge>
+	<edge id="e15" source="HSL16L" target="HSL17M">
+		<data key="Weight">231</data>
+	</edge>
+	<edge id="e16" source="HSL17M" target="HSL22Q">
+		<data key="Weight">124</data>
+	</edge>
+	<edge id="e17" source="HSL22Q" target="HSL31R">
+		<data key="Weight">117</data>
+	</edge>
+	<edge id="e18" source="HSL31R" target="HSL31T">
+		<data key="Weight">32</data>
+	</edge>
+	<edge id="e19" source="HSL17M" target="HSL17V">
+		<data key="Weight">442</data>
+	</edge>
+	<!--SOUTH-->
+	<edge id="e20" source="HSL01A" target="9100BHAMMRS">
+		<data key="Weight">302</data>
+	</edge>
+	<edge id="e21" source="HSL01A" target="XBHI">
+		<data key="Weight">302</data>
+	</edge>
+	<edge id="e22" source="HSL06B" target="HSL01A">
+		<data key="Weight">84</data>
+	</edge>
+	<edge id="e23" source="HSL09G" target="HSL06B">
+		<data key="Weight">254</data>
+	</edge>
+	<edge id="e24" source="HSL12H" target="HSL09G">
+		<data key="Weight">150</data>
+	</edge>
+	<edge id="e25" source="HSL13J" target="HSL12H">
+		<data key="Weight">54</data>
+	</edge>
+	<edge id="e26" source="HSL14F" target="HSL13J">
+		<data key="Weight">430</data>
+	</edge>
+	<edge id="e27" source="HSL15K" target="HSL14F">
+		<data key="Weight">124</data>
+	</edge>
+	<edge id="e28" source="HSL16L" target="HSL15K">
+		<data key="Weight">47</data>
+	</edge>
+	<edge id="e29" source="HSL17M" target="HSL16L">
+		<data key="Weight">231</data>
+	</edge>
+	<edge id="e30" source="HSL22Q" target="HSL17M">
+		<data key="Weight">124</data>
+	</edge>
+	<edge id="e31" source="HSL31R" target="HSL22Q">
+		<data key="Weight">117</data>
+	</edge>
+	<edge id="e32" source="HSL31T" target="HSL31R">
+		<data key="Weight">32</data>
+	</edge>
+	<edge id="e33" source="HSL17V" target="HSL17M">
+		<data key="Weight">442</data>
+	</edge>
+	
+	<!--HS2Phase2Manchester-->
+	<!--NORTH-->
+	<edge id="e34" source="9100BHAMMRS" target="HSM03A">
+		<data key="Weight">386</data>
+	</edge>
+	<edge id="e35" source="XBHI" target="HSM03A">
+		<data key="Weight">386</data>
+	</edge>
+	<edge id="e36" source="HSM03A" target="HSM06C">
+		<data key="Weight">340</data>
+	</edge>
+	<edge id="e37" source="HSM06C" target="HSM08D">
+		<data key="Weight">95</data>
+	</edge>
+	<edge id="e38" source="HSM08D" target="HSM09E">
+		<data key="Weight">65</data>
+	</edge>
+	<edge id="e39" source="HSM09E" target="HSM09F">
+		<data key="Weight">53</data>
+	</edge>
+	<edge id="e40" source="HSM09E" target="HSM12H">
+		<data key="Weight">288</data>
+	</edge>
+	<edge id="e41" source="HSM12H" target="HSM21Q">
+		<data key="Weight">208</data>
+	</edge>
+	<edge id="e42" source="HSM21Q" target="HSM22R">
+		<data key="Weight">127</data>
+	</edge>
+	<edge id="e43" source="HSM22R" target="HSM22AA">
+		<data key="Weight">93</data>
+	</edge>
+	<edge id="e44" source="HSM12H" target="HSM28BZ">
+		<data key="Weight">171</data>
+	</edge>
+	<edge id="e45" source="HSM28BZ" target="HSM28BY">
+		<data key="Weight">254</data>
+	</edge>
+	<edge id="e46" source="HSM28BY" target="HSM26MP">
+		<data key="Weight">59</data>
+	</edge>
+	<edge id="e47" source="HSM28BZ" target="HSM21Q">
+		<data key="Weight">134</data>
+	</edge>
+	<!--SOUTH-->
+	<edge id="e48" source="HSM03A" target="9100BHAMMRS">
+		<data key="Weight">386</data>
+	</edge>
+	<edge id="e49" source="HSM03A" target="XBHI">
+		<data key="Weight">386</data>
+	</edge>
+	<edge id="e50" source="HSM06C" target="HSM03A">
+		<data key="Weight">340</data>
+	</edge>
+	<edge id="e51" source="HSM08D" target="HSM06C">
+		<data key="Weight">95</data>
+	</edge>
+	<edge id="e52" source="HSM09E" target="HSM08D">
+		<data key="Weight">65</data>
+	</edge>
+	<edge id="e53" source="HSM09F" target="HSM09E">
+		<data key="Weight">53</data>
+	</edge>
+	<edge id="e54" source="HSM12H" target="HSM09E">
+		<data key="Weight">288</data>
+	</edge>
+	<edge id="e55" source="HSM21Q" target="HSM12H">
+		<data key="Weight">208</data>
+	</edge>
+	<edge id="e56" source="HSM22R" target="HSM21Q">
+		<data key="Weight">127</data>
+	</edge>
+	<edge id="e57" source="HSM22AA" target="HSM22R">
+		<data key="Weight">93</data>
+	</edge>
+	<edge id="e58" source="HSM28BZ" target="HSM12H">
+		<data key="Weight">171</data>
+	</edge>
+	<edge id="e59" source="HSM28BY" target="HSM28BZ">
+		<data key="Weight">254</data>
+	</edge>
+	<edge id="e60" source="HSM26MP" target="HSM28BY">
+		<data key="Weight">59</data>
+	</edge>
+	<edge id="e61" source="HSM21Q" target="HSM28BZ">
+		<data key="Weight">134</data>
+	</edge>
+	
+  </graph>
+</graphml>
