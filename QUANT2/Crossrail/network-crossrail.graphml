@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+	<node id="CHH" code="" lines="E" lon="0.128262928" lat="51.56802985" name="Chadwell Heath Station"/>
+	<node id="ROM" code="" lines="E" lon="0.182271262" lat="51.57469963" name="Romford Station"/>
+	<node id="GIP" code="" lines="E" lon="0.206213865" lat="51.58206946" name="Gidea Park"/>
+	<node id="MAR" code="" lines="E" lon="0.005956303" lat="51.54598607" name="Maryland Station"/>
+	<node id="LAN" code="" lines="E" lon="-0.5412513345847" lat="51.50773888" name="Langley Station"/>
+	<node id="SLO" code="" lines="E" lon="-0.5913414142036" lat="51.51210381" name="Slough Station"/>
+	<node id="BUR" code="" lines="E" lon="-0.6471694256522" lat="51.52349842" name="Burnham Station"/>
+	<node id="TAP" code="" lines="E" lon="-0.6811565701322" lat="51.52323304" name="Taplow Station"/>
+	<node id="IVE" code="" lines="E" lon="-0.5060939450553" lat="51.50859571" name="Iver Station"/>
+	<node id="HE4" code="" lines="EP" lon="-0.4460688193686" lat="51.45921682" name="Heathrow T4"/>
+	<node id="HAH" code="" lines="E" lon="-0.4193890180605" lat="51.50304626" name="Hayes and Harlington Station"/>
+	<node id="WED" code="" lines="E" lon="-0.4717622867157" lat="51.50989817" name="West Drayton Station"/>
+	<node id="SOU" code="" lines="E" lon="-0.3771366813614" lat="51.50615545" name="Southall Station"/>
+	<node id="HAN" code="" lines="E" lon="-0.3383252444446" lat="51.51179189" name="Hanwell Station"/>
+	<node id="WEE" code="" lines="E" lon="-0.3211709332289" lat="51.51348049" name="West Ealing Station"/>
+	<node id="AML" code="" lines="E" lon="-0.267632925697" lat="51.51709328" name="Acton Main Line Station"/>
+	<node id="HE1" code="" lines="EP" lon="-0.4537485829541" lat="51.4719246" name="Heathrow Central"/>
+	<node id="EAB" code="" lines="ECD" lon="-0.301552143916" lat="51.51475621" name="Ealing Broadway Station"/>
+	<node id="MAI" code="" lines="E" lon="-0.7228472432449" lat="51.51839365" name="Maidenhead Station"/>
+	<node id="FOG" code="" lines="E" lon="0.023626763" lat="51.54924258" name="Forest Gate Station"/>
+	<node id="MAP" code="" lines="E" lon="0.045351614" lat="51.55220764" name="Manor Park Station"/>
+	<node id="ILF" code="" lines="E" lon="0.068881667" lat="51.55902619" name="Ilford Station"/>
+	<node id="SEK" code="" lines="E" lon="0.096060689" lat="51.5639578" name="Seven Kings Station"/>
+	<node id="GOO" code="" lines="E" lon="0.111823161" lat="51.56579748" name="Goodmayes Station"/>
+	<node id="TWY" code="" lines="E" lon="-0.8631479742741" lat="51.47545671" name="Twyford Station"/>
+	<node id="RDG" code="" lines="E" lon="-0.9728969992698" lat="51.45917481" name="Reading Station"/>
+	<node id="STR" code="" lines="ECJ" lon="-0.004089918" lat="51.54144739" name="Stratford Station"/>
+	<node id="HAR" code="" lines="E" lon="0.2346411777324" lat="51.59344994" name="Harold Wood Station"/>
+	<node id="BRE" code="" lines="E" lon="0.3008239248481" lat="51.61356402" name="Brentwood Station"/>
+	<node id="SHE" code="" lines="E" lon="0.3297840737557" lat="51.6305933" name="Shenfield Station"/>
+	<node id="WHI" code="" lines="EDH" lon="-0.0594509635233335" lat="51.52024606" name="Whitechapel Station"/>
+	<node id="CWC" code="" lines="E" lon="-0.0172263757510742" lat="51.50611414" name="Canary Wharf Station"/>
+	<node id="CUH" code="" lines="E" lon="0.028561672" lat="51.50983622" name="Custom House Station"/>
+	<node id="WOO" code="" lines="E" lon="0.072107049" lat="51.49167813" name="Woolwich Station"/>
+	<node id="ABW" code="" lines="E" lon="0.120532406" lat="51.49108426" name="Abbey Wood Station"/>
+	<node id="PAD" code="" lines="EBHD" lon="-0.177763642139996" lat="51.51619818" name="Paddington Station"/>
+	<node id="BOS" code="" lines="ECJ" lon="-0.146337168434745" lat="51.51360946" name="Bond Street Station"/>
+	<node id="TCR" code="" lines="ECN" lon="-0.132832377726379" lat="51.51533762" name="Tottenham Court Road"/>
+	<node id="FAR" code="" lines="EHM" lon="-0.102302380301763" lat="51.51992399" name="Farringdon Station"/>
+	<node id="LIS" code="" lines="ECHMN" lon="-0.086704255" lat="51.51769725" name="Liverpool Street Station"/>
+
+	<!--EAST-->
+	<edge id="e0" source="HE4" target="HE1">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e1" source="HE1" target="HAH">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e2" source="RDG" target="TWY">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e3" source="TWY" target="MAI">
+		<data key="Weight">420</data>
+	</edge>
+	<edge id="e4" source="MAI" target="TAP">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e5" source="TAP" target="BUR">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e6" source="BUR" target="SLO">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e7" source="SLO" target="LAN">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e8" source="LAN" target="IVE">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e9" source="IVE" target="WED">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e10" source="WED" target="HAH">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e11" source="HAH" target="SOU">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e12" source="SOU" target="HAN">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e13" source="HAN" target="WEE">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e14" source="WEE" target="EAB">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e15" source="EAB" target="AML">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e16" source="AML" target="PAD">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e17" source="PAD" target="BOS">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e18" source="BOS" target="TCR">
+		<data key="Weight">60</data>
+	</edge>
+	<edge id="e19" source="TCR" target="FAR">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e20" source="FAR" target="LIS">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e21" source="LIS" target="WHI">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e22" source="WHI" target="STR">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e23" source="STR" target="MAR">
+		<data key="Weight">60</data>
+	</edge>
+	<edge id="e24" source="MAR" target="FOG">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e25" source="FOG" target="MAP">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e26" source="MAP" target="ILF">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e27" source="ILF" target="SEK">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e28" source="SEK" target="GOO">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e29" source="GOO" target="CHH">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e30" source="CHH" target="ROM">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e31" source="ROM" target="GIP">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e32" source="GIP" target="HAR">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e33" source="HAR" target="BRE">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e34" source="BRE" target="SHE">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e35" source="WHI" target="CWC">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e36" source="CWC" target="CUH">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e37" source="CUH" target="WOO">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e38" source="WOO" target="ABW">
+		<data key="Weight">240</data>
+	</edge>
+	
+	<!--WEST-->
+	<edge id="e39" source="HE1" target="HE4">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e40" source="HAH" target="HE1">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e41" source="TWY" target="RDG">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e42" source="MAI" target="TWY">
+		<data key="Weight">420</data>
+	</edge>
+	<edge id="e43" source="TAP" target="MAI">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e44" source="BUR" target="TAP">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e45" source="SLO" target="BUR">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e46" source="LAN" target="SLO">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e47" source="IVE" target="LAN">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e48" source="WED" target="IVE">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e49" source="HAH" target="WED">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e50" source="SOU" target="HAH">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e51" source="HAN" target="SOU">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e52" source="WEE" target="HAN">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e53" source="EAB" target="WEE">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e54" source="AML" target="EAB">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e55" source="PAD" target="AML">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e56" source="BOS" target="PAD">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e57" source="TCR" target="BOS">
+		<data key="Weight">60</data>
+	</edge>
+	<edge id="e58" source="FAR" target="TCR">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e59" source="LIS" target="FAR">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e60" source="WHI" target="LIS">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e61" source="STR" target="WHI">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e62" source="MAR" target="STR">
+		<data key="Weight">60</data>
+	</edge>
+	<edge id="e63" source="FOG" target="MAR">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e64" source="MAP" target="FOG">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e65" source="ILF" target="MAP">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e66" source="SEK" target="ILF">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e67" source="GOO" target="SEK">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e68" source="CHH" target="GOO">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e69" source="ROM" target="CHH">
+		<data key="Weight">300</data>
+	</edge>
+	<edge id="e70" source="GIP" target="ROM">
+		<data key="Weight">120</data>
+	</edge>
+	<edge id="e71" source="HAR" target="GIP">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e72" source="BRE" target="HAR">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e73" source="SHE" target="BRE">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e74" source="CWC" target="WHI">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e75" source="CUH" target="CWC">
+		<data key="Weight">180</data>
+	</edge>
+	<edge id="e76" source="WOO" target="CUH">
+		<data key="Weight">240</data>
+	</edge>
+	<edge id="e77" source="ABW" target="WOO">
+		<data key="Weight">240</data>
+	</edge>
+	
+  </graph>
+</graphml>
