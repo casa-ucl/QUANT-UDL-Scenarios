@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    
+
+    <!--New metro lines in Manchester created by Maarten. We have two loop, when going north-east to Rochdale and one south-west to the airport-->
+
+    <!--Existing rail stations that co-occur with metro station-->
+    <node id="9100MNCRIAP" code="" lines="CamCox" lon="-2.272979962460575" lat="53.365058895904106" name="Manchester Airport"/>
+	<node id="9100MNCRPIC" code="" lines="CamCox" lon="-2.230910050426374" lat="53.477371212898575" name="Manchester Piccadilly"/>
+	<node id="9100SLFDORD" code="" lines="CamCox" lon="-2.254839884805364" lat="53.48308944410611" name="Salford Central"/>
+	<node id="9100MNCRVIC" code="" lines="CamCox" lon="-2.242599951781481" lat="53.48748016066226" name="Manchester Victoria"/>
+
+
+	<!--New metro stations, based on Maarten's idea for a best position.-->
+	<node id="METRO4NEWTONH" code="" lines="CamCox" lon="-2.179413288709954" lat="53.502645627269935" name="Newton Heath"/>
+	<node id="METRO4HOLLINW" code="" lines="CamCox" lon="-2.140118026038099" lat="53.520116588436" name="Hollinwood"/>
+	<node id="METRO4OLDHAM" code="" lines="CamCox" lon="-2.117805913403444" lat="53.541046046163856" name="Oldham"/>
+	<node id="METRO4ROYTON" code="" lines="CamCox" lon="-2.125331460186861" lat="53.56886906787884" name="Royton"/>
+	<node id="METRO4ROCHDALE" code="" lines="CamCox" lon="-2.153481927957115" lat="53.61036248821661" name="Rochdale"/>
+	<node id="METRO4HEYWOOD" code="" lines="CamCox" lon="-2.228430668505627" lat="53.59326198842026" name="`Heywood"/>
+	<node id="METRO4BURY" code="" lines="CamCox" lon="-2.300277134341953" lat="53.592927604029285" name="Bury"/>
+	<node id="METRO4WHITEFIELD" code="" lines="CamCox" lon="-2.290991268249006" lat="53.54840744815627" name="Whitefield"/>
+	<node id="METRO4BROUGHTHON" code="" lines="CamCox" lon="-2.261356327404052" lat="53.50626428937345" name="Broughthon"/>
+	<node id="METRO4OLDTRAFFORD" code="" lines="CamCox" lon="-2.27751771962505" lat="53.45914436387951" name="Old Trafford"/>
+	<node id="METRO4SALE" code="" lines="CamCox" lon="-2.317261316911664" lat="53.42487947339398" name="Sale"/>
+	<node id="METRO4BAGULEY" code="" lines="CamCox" lon="-2.308318662815285" lat="53.39961750653737" name="Baguley"/>
+	<node id="METRO4DIDSBURY" code="" lines="CamCox" lon="-2.241960953141574" lat="53.42154252256197" name="Didsbury"/>
+	<node id="METRO4MOSSIDE" code="" lines="CamCox" lon="-2.239080997869164" lat="53.45016370968103" name="Moss Side"/>
+	<node id="METRO4CHORLTON" code="" lines="CamCox" lon="-2.234362974207846" lat="53.466686508586335" name="Chorlton"/>
+
+
+
+	<!--South-West loop.-->
+	<!--Times are in seconds and based extrapolation network-metro-manchester-distancestance-matrix.xlsx file-->
+
+	<!--Clockwise-->
+
+
+	<edge id="e23" source="9100MNCRPIC" target="METRO4CHORLTON">
+		<data key="Weight">87</data>
+	</edge>
+
+	<edge id="e24" source="METRO4CHORLTON" target="METRO4MOSSIDE">
+		<data key="Weight">134</data>
+	</edge>
+
+	<edge id="e25" source="METRO4MOSSIDE" target="METRO4DIDSBURY">
+		<data key="Weight">230</data>
+	</edge>
+
+	<edge id="e26" source="METRO4DIDSBURY" target="9100MNCRIAP">
+		<data key="Weight">476</data>
+	</edge>
+
+	<edge id="e27" source="9100MNCRIAP" target="METRO4BAGULEY">
+		<data key="Weight">325</data>
+	</edge>
+
+	<edge id="e28" source="METRO4BAGULEY" target="METRO4SALE">
+		<data key="Weight">207</data>
+	</edge>
+
+	<edge id="e29" source="METRO4SALE" target="METRO4OLDTRAFFORD">
+		<data key="Weight">334</data>
+	</edge>
+
+	<edge id="e30" source="METRO4OLDTRAFFORD" target="9100SLFDORD">
+		<data key="Weight">220</data>
+	</edge>
+
+	<edge id="e31" source="9100SLFDORD" target="9100MNCRPIC">
+		<data key="Weight">123</data>
+	</edge>
+
+
+	<!--Anti-Clockwise-->
+
+	<edge id="e23" source="METRO4CHORLTON" target="9100MNCRPIC">
+		<data key="Weight">87</data>
+	</edge>
+
+	<edge id="e24" source="METRO4MOSSIDE" target="METRO4CHORLTON">
+		<data key="Weight">134</data>
+	</edge>
+
+	<edge id="e25" source="METRO4DIDSBURY" target="METRO4MOSSIDE">
+		<data key="Weight">230</data>
+	</edge>
+
+	<edge id="e26" source="9100MNCRIAP" target="METRO4DIDSBURY">
+		<data key="Weight">476</data>
+	</edge>
+
+	<edge id="e27" source="METRO4BAGULEY" target="9100MNCRIAP">
+		<data key="Weight">325</data>
+	</edge>
+
+	<edge id="e28" source="METRO4SALE" target="METRO4BAGULEY">
+		<data key="Weight">207</data>
+	</edge>
+
+	<edge id="e29" source="METRO4OLDTRAFFORD" target="METRO4SALE">
+		<data key="Weight">334</data>
+	</edge>
+
+	<edge id="e30" source="9100SLFDORD" target="METRO4OLDTRAFFORD">
+		<data key="Weight">220</data>
+	</edge>
+
+	<edge id="e31" source="9100MNCRPIC" target="9100SLFDORD">
+		<data key="Weight">123</data>
+	</edge>
+
+
+
+	<!--North-East loop.-->
+	<!--Times are in seconds and based extrapolation network-metro-manchester-distancestance-matrix.xlsx file-->
+
+	<!--Clockwise-->
+
+	<edge id="e0" source="9100MNCRPIC" target="9100SLFDORD">
+		<data key="Weight">123</data>
+	</edge>
+
+	<edge id="e1" source="9100SLFDORD" target="9100MNCRVIC">
+		<data key="Weight">68</data>
+	</edge>	
+
+	<edge id="e2" source="9100MNCRVIC" target="METRO4BROUGHTHON">
+		<data key="Weight">175</data>
+	</edge>
+
+	<edge id="e3" source="METRO4BROUGHTHON" target="METRO4WHITEFIELD">
+		<data key="Weight">366</data>
+	</edge>
+
+	<edge id="e4" source="METRO4WHITEFIELD" target="METRO4BURY">
+		<data key="Weight">360</data>
+	</edge>
+
+	<edge id="e5" source="METRO4BURY" target="METRO4HEYWOOD">
+		<data key="Weight">343</data>
+	</edge>
+
+	<edge id="e6" source="METRO4HEYWOOD" target="METRO4ROCHDALE">
+		<data key="Weight">383</data>
+	</edge>
+
+	<edge id="e7" source="METRO4ROCHDALE" target="METRO4ROYTON">
+		<data key="Weight">359</data>
+	</edge>
+
+	<edge id="e8" source="METRO4ROYTON" target="METRO4OLDHAM">
+		<data key="Weight">226</data>
+	</edge>
+
+	<edge id="e9" source="METRO4OLDHAM" target="METRO4HOLLINW">
+		<data key="Weight">199</data>
+	</edge>
+
+	<edge id="e10" source="METRO4HOLLINW" target="METRO4NEWTONH">
+		<data key="Weight">234</data>
+	</edge>
+
+	<edge id="e11" source="METRO4NEWTONH" target="9100MNCRPIC">
+		<data key="Weight">319</data>
+	</edge>
+
+
+	<!--Anti-Clockwise-->
+
+	<edge id="e0" source="9100SLFDORD" target="9100MNCRPIC">
+		<data key="Weight">123</data>
+	</edge>
+
+	<edge id="e1" source="9100MNCRVIC" target="9100SLFDORD">
+		<data key="Weight">68</data>
+	</edge>	
+
+	<edge id="e2" source="METRO4BROUGHTHON" target="9100MNCRVIC">
+		<data key="Weight">175</data>
+	</edge>
+
+	<edge id="e3" source="METRO4WHITEFIELD" target="METRO4BROUGHTHON">
+		<data key="Weight">366</data>
+	</edge>
+
+	<edge id="e4" source="METRO4BURY" target="METRO4WHITEFIELD">
+		<data key="Weight">360</data>
+	</edge>
+
+	<edge id="e5" source="METRO4HEYWOOD" target="METRO4BURY">
+		<data key="Weight">343</data>
+	</edge>
+
+	<edge id="e6" source="METRO4ROCHDALE" target="METRO4HEYWOOD">
+		<data key="Weight">383</data>
+	</edge>
+
+	<edge id="e7" source="METRO4ROYTON" target="METRO4ROCHDALE">
+		<data key="Weight">359</data>
+	</edge>
+
+	<edge id="e8" source="METRO4OLDHAM" target="METRO4ROYTON">
+		<data key="Weight">226</data>
+	</edge>
+
+	<edge id="e9" source="METRO4HOLLINW" target="METRO4OLDHAM">
+		<data key="Weight">199</data>
+	</edge>
+
+	<edge id="e10" source="METRO4NEWTONH" target="METRO4HOLLINW">
+		<data key="Weight">234</data>
+	</edge>
+
+	<edge id="e11" source="9100MNCRPIC" target="METRO4NEWTONH">
+		<data key="Weight">319</data>
+	</edge>
+
+
+	
+  </graph>
+</graphml>
