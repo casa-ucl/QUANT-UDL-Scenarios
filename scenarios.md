@@ -7,7 +7,12 @@
   ![LjkDiff_Road, carbon saved](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/HS2/scenariorunner_HS2_20200224_140436/QUANT_Scenario_HS2_LjkDiff_road.png)  
   https://github.com/casa-ucl/QUANT-UDL-Scenarios/tree/master/QUANT2/HS2  
 
-## CAMCOX / East West Rail Route 
+## East West Rail (CAMCOX)
+  East West Rail CjDiff residential population change, all modes
+  ![CjDiff](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/EastWestRail/EastWestRailCjDiff.jpg)
+  LjkDiff_Road, carbon saved, difference in road KM driven
+  ![LjkDiff_Road, carbon saved](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/EastWestRail/EastWestRailLjkDiffRoad.jpg)  
+  https://github.com/casa-ucl/QUANT-UDL-Scenarios/tree/master/QUANT2/EastWestRail
 
 ## Northern Powerhouse
 
