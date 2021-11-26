@@ -1,11 +1,19 @@
 # QUANT Scenarios
 
-## High Speed Rail  
+## High Speed Rail (Old version pre 2020) 
   High Speed 2, CjDiff residential population change, all modes 
   ![CjDiff](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/HS2/scenariorunner_HS2_20200224_140436/QUANT_Scenario_HS2_CjDiff.png)
   LjkDiff_Road, carbon saved, difference in road KM driven
   ![LjkDiff_Road, carbon saved](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/HS2/scenariorunner_HS2_20200224_140436/QUANT_Scenario_HS2_LjkDiff_road.png)  
   https://github.com/casa-ucl/QUANT-UDL-Scenarios/tree/master/QUANT2/HS2  
+
+## High Speed Rail Integrated Rail Plan November 2021
+  High Speed 2, Northern Powerhouse Rail and other IRP changes, excluding Leeds metro upgrade and East Coast mainline upgrade
+  CjDiff residential population change, all modes
+  ![CjDiff](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/HS2IRP/scenariorunner_HS2IRP_20211126_103513/QUANT_Scenario_HS2IRP_CjDiff.png)
+  LjkDiff_Road, carbon saved, difference in road KM driven
+  ![LjkDiffRoad](https://github.com/casa-ucl/QUANT-UDL-Scenarios/blob/master/QUANT2/HS2IRP/scenariorunner_HS2IRP_20211126_103513/QUANT_Scenario_HS2IRP_LjkDiffRoad.png)
+https://github.com/casa-ucl/QUANT-UDL-Scenarios/tree/master/QUANT2/HS2IRP  
 
 ## East West Rail (CAMCOX)
   East West Rail CjDiff residential population change, all modes
